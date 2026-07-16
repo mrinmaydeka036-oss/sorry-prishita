@@ -7,7 +7,7 @@ font-family:Arial,Helvetica,sans-serif;
 
 body{
 background:linear-gradient(180deg,#080808,#140000,#080808);
-overflow:hidden;
+overflow:visible;
 height:100vh;
 display:flex;
 justify-content:center;
@@ -61,14 +61,16 @@ background:#fffdf5;
 color:#222;
 border-radius:12px;
 padding:20px;
-transform:translateY(70%);
+height:340px;
+overflow-y:auto;
+transform:translateY(100%);
 transition:1s;
 box-shadow:0 10px 25px rgba(0,0,0,.3);
 z-index:2;
 }
 
 .envelope.open .letter{
-transform:translateY(-80px);
+transform:translateY(-170px);
 }
 
 .letter h1{
