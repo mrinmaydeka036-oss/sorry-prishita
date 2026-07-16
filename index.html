@@ -1,43 +1,64 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>I'm Sorry ❤️</title>
 
-<style>
-
-body{
-margin:0;
-background:#000;
-display:flex;
-justify-content:center;
-align-items:center;
-height:100vh;
-overflow:hidden;
-}
-
-img{
-width:95%;
-max-width:450px;
-border-radius:20px;
-box-shadow:0 0 30px red;
-animation:fade 2s ease;
-}
-
-@keyframes fade{
-from{opacity:0;transform:scale(.8);}
-to{opacity:1;transform:scale(1);}
-}
-
-</style>
-
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<img 
-  src="https://i.ibb.co/PZcWxzjm/file-0000000044ec7209a40558a7494b3902.png">
-</body>
+<div id="hearts"></div>
 
+<div class="container">
+
+<div class="envelope" id="envelope">
+<div class="flap"></div>
+<div class="letter">
+
+<h1>I'm Sorry ❤️</h1>
+
+<p>
+Dear Prishita,
+
+I know I made mistakes.
+I never wanted to hurt you.
+
+Please watch this video till the end.
+
+</p>
+
+<button id="openBtn">
+Open My Heart 💌
+</button>
+
+</div>
+</div>
+
+<div class="videoBox" id="videoBox">
+
+<video id="video"
+controls
+autoplay
+muted
+playsinline>
+
+<source src="Video.mp4" type="video/mp4">
+
+</video>
+
+<button id="soundBtn">
+🔊 Turn On Sound
+</button>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
 </html>
