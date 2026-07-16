@@ -9,7 +9,7 @@ openBtn.onclick = () => {
 
     setTimeout(() => {
         videoBox.style.display = "block";
-        video.play().catch(()=>{});
+        video.play().catch(() => {});
     }, 1200);
 };
 
@@ -17,20 +17,21 @@ soundBtn.onclick = () => {
     video.muted = false;
     video.volume = 1;
     video.play();
-    soundBtn.innerText = "❤️ Enjoy the Video";
+    soundBtn.innerHTML = "❤️ Enjoy the Video";
 };
 
-function createHeart(){
-    const heart=document.createElement("div");
-    heart.className="heart";
-    heart.innerHTML="❤️";
-    heart.style.left=Math.random()*100+"vw";
-    heart.style.animationDuration=(5+Math.random()*5)+"s";
+function createHeart() {
+    const heart = document.createElement("div");
+    heart.className = "heart";
+    heart.innerHTML = "❤️";
+    heart.style.left = Math.random() * 100 + "vw";
+    heart.style.animationDuration = (Math.random() * 5 + 5) + "s";
+
     document.body.appendChild(heart);
 
-    setTimeout(()=>{
+    setTimeout(() => {
         heart.remove();
-    },10000);
+    }, 10000);
 }
 
-setInterval(createHeart,500);
+setInterval(createHeart, 500);
