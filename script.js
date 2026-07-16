@@ -1,3 +1,4 @@
+alert("JS Loaded");
 const envelope = document.getElementById("envelope");
 const openBtn = document.getElementById("openBtn");
 const videoBox = document.getElementById("videoBox");
